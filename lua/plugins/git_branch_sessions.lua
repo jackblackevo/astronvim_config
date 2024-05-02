@@ -10,6 +10,7 @@ local get_session_name = function()
   end
 end
 
+---@type LazySpec
 return {
   "AstroNvim/astrocore",
   ---@type AstroCoreOpts

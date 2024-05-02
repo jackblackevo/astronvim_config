@@ -1,3 +1,4 @@
+---@type LazySpec
 return {
   "rmagatti/goto-preview",
   config = function()
