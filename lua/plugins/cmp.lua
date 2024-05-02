@@ -1,5 +1,7 @@
 -- https://docs.astronvim.com/recipes/cmp/
 -- override nvim-cmp plugin
+
+---@type LazySpec
 return {
   "hrsh7th/nvim-cmp",
   dependencies = {

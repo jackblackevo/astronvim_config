@@ -1,6 +1,7 @@
 -- https://docs.astronvim.com/configuration/customizing_plugins/#configure-astronvim-plugins
 -- override neo-tree.nvim plugin
 
+---@type LazySpec
 return {
   "nvim-neo-tree/neo-tree.nvim",
   opts = function(_, opts)
