@@ -32,6 +32,10 @@ return {
         spell = false, -- sets vim.opt.spell
         signcolumn = "auto", -- sets vim.opt.signcolumn to auto
         wrap = false, -- sets vim.opt.wrap
+        shiftwidth = 2,
+        tabstop = 2,
+        list = true,
+        listchars = { tab = "»·", trail = "·" },
       },
       g = { -- vim.g.<key>
         -- configure global vim variables (vim.g)
