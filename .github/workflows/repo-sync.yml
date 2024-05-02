@@ -1,0 +1,27 @@
+name: Repo Sync
+
+on:
+  schedule:
+    # Every monday
+    - cron: "0 0 * * 1"
+  # Allow the action to be manually run
+  workflow_dispatch:
+
+jobs:
+  sync-from-template:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          # Fetch all history
+          fetch-depth: 0
+
+      - name: Template Sync
+        uses: AndreasAugustin/actions-template-sync@v2
+        with:
+          source_repo_path: AstroNvim/template
