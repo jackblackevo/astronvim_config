@@ -11,6 +11,7 @@ return {
   -- import/override with your plugins folder
   -- https://github.com/AstroNvim/astrocommunity/tree/main/lua/astrocommunity/pack/typescript-all-in-one
   { import = "astrocommunity.pack.typescript-all-in-one" },
+  { import = "astrocommunity.pack.rainbow-delimiter-indent-blankline" },
   { import = "astrocommunity.color.ccc-nvim" },
   { import = "astrocommunity.motion.flash-nvim" },
   { import = "astrocommunity.motion.mini-surround" },
