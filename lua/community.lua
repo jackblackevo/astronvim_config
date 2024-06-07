@@ -12,4 +12,5 @@ return {
   -- https://github.com/AstroNvim/astrocommunity/tree/main/lua/astrocommunity/pack/typescript-all-in-one
   { import = "astrocommunity.pack.typescript-all-in-one" },
   { import = "astrocommunity.color.ccc-nvim" },
+  { import = "astrocommunity.motion.flash-nvim" },
 }
