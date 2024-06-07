@@ -21,4 +21,5 @@ return {
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
   { import = "astrocommunity.editing-support.vim-visual-multi" },
   { import = "astrocommunity.diagnostics.trouble-nvim" },
+  { import = "astrocommunity.lsp.actions-preview-nvim" },
 }
