@@ -18,4 +18,5 @@ return {
   { import = "astrocommunity.git.gitlinker-nvim" },
   { import = "astrocommunity.editing-support.refactoring-nvim" },
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
+  { import = "astrocommunity.editing-support.vim-visual-multi" },
 }
