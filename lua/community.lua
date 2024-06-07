@@ -14,4 +14,5 @@ return {
   { import = "astrocommunity.color.ccc-nvim" },
   { import = "astrocommunity.motion.flash-nvim" },
   { import = "astrocommunity.git.git-blame-nvim" },
+  { import = "astrocommunity.git.gitlinker-nvim" },
 }
