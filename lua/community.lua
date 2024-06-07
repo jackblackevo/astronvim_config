@@ -13,6 +13,7 @@ return {
   { import = "astrocommunity.pack.typescript-all-in-one" },
   { import = "astrocommunity.color.ccc-nvim" },
   { import = "astrocommunity.motion.flash-nvim" },
+  { import = "astrocommunity.motion.mini-surround" },
   { import = "astrocommunity.git.git-blame-nvim" },
   { import = "astrocommunity.git.gitlinker-nvim" },
 }
