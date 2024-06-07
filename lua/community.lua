@@ -13,4 +13,5 @@ return {
   { import = "astrocommunity.pack.typescript-all-in-one" },
   { import = "astrocommunity.color.ccc-nvim" },
   { import = "astrocommunity.motion.flash-nvim" },
+  { import = "astrocommunity.git.git-blame-nvim" },
 }
