@@ -17,13 +17,13 @@ return {
     }
 
     -- label
-    require("which-key").register {
-      gp = "Goto Preview",
-      gpd = "Definition",
-      gpt = "Type Definition",
-      gpi = "Implementation",
-      gP = "Close All Windows",
-      gpr = "References",
+    require("which-key").add {
+      { "gP", desc = "Close All Windows" },
+      { "gp", desc = "Goto Preview" },
+      { "gpd", desc = "Definition" },
+      { "gpi", desc = "Implementation" },
+      { "gpr", desc = "References" },
+      { "gpt", desc = "Type Definition" },
     }
   end,
 }
