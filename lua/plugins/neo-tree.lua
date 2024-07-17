@@ -5,6 +5,9 @@
 return {
   "nvim-neo-tree/neo-tree.nvim",
   opts = function(_, opts)
+    -- https://github.com/nvim-neo-tree/neo-tree.nvim/blob/206241e451c12f78969ff5ae53af45616ffc9b72/lua/neo-tree/sources/filesystem/lib/filter_external.lua#L150-L152
+    opts.filesystem.filtered_items.hide_dotfiles = false
+
     local astro = require "astrocore"
 
     -- https://github.com/AstroNvim/AstroNvim/blob/b505f4ff41f851fa4a008586995f79408daf72bc/lua/astronvim/plugins/neo-tree.lua#L199-L206
