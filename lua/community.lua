@@ -23,4 +23,5 @@ return {
   { import = "astrocommunity.diagnostics.trouble-nvim" },
   { import = "astrocommunity.lsp.actions-preview-nvim" },
   { import = "astrocommunity.completion.tabnine-nvim" },
+  { import = "astrocommunity.completion.avante-nvim" },
 }
