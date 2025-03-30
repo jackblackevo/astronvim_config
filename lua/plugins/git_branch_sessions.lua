@@ -34,8 +34,6 @@ return {
       },
     },
     autocmds = {
-      -- disable alpha autostart
-      alpha_autostart = false,
       git_branch_sessions = {
         -- auto save directory sessions on leaving
         {
@@ -56,13 +54,7 @@ return {
             -- Only load the session if nvim was started with no args
             if vim.fn.argc(-1) == 0 then
               -- try to load a directory session using the current working directory
-              -- https://github.com/stevearc/resession.nvim/blob/4463a78e1783c99466d5f5fb79516d06a5d6f3f8/lua/resession/init.lua#L485-L490
-              xpcall(require("resession").load, function()
-                -- https://github.com/AstroNvim/AstroNvim/blob/e2edcc7e197d577912d29305f67d7c995ae47353/lua/astronvim/plugins/alpha.lua#L68-L70
-                require("lazy").load { plugins = { "alpha-nvim" } }
-                require("alpha").start(true)
-                vim.schedule(function() vim.cmd.doautocmd "FileType" end)
-              end, get_session_name(), { dir = "dirsession" })
+              require("resession").load(get_session_name(), { dir = "dirsession", silence_errors = true })
             end
           end,
         },
