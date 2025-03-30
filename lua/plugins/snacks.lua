@@ -24,4 +24,48 @@ return {
       },
     },
   },
+  specs = {
+    -- override neo-tree.nvim plugin
+    -- https://github.com/AstroNvim/AstroNvim/blob/0079d7bcce221bbed3ecd32833f4e79c0a1979fe/lua/astronvim/plugins/snacks.lua#L209-L222
+    {
+      "nvim-neo-tree/neo-tree.nvim",
+      optional = true,
+      opts = {
+        commands = {
+          -- https://github.com/AstroNvim/AstroNvim/blob/0079d7bcce221bbed3ecd32833f4e79c0a1979fe/lua/astronvim/plugins/snacks.lua#L214-L218
+          find_files_in_dir = function(state)
+            local node = state.tree:get_node()
+            local path = node.type == "file" and node:get_parent_id() or node:get_id()
+            require("snacks").picker.files { cwd = path }
+          end,
+          -- https://github.com/AstroNvim/AstroNvim/blob/0079d7bcce221bbed3ecd32833f4e79c0a1979fe/lua/astronvim/plugins/snacks.lua#L169-L172
+          find_all_files_in_dir = function(state)
+            local node = state.tree:get_node()
+            local path = node.type == "file" and node:get_parent_id() or node:get_id()
+            require("snacks").picker.files { cwd = path, hidden = true, ignored = true }
+          end,
+          -- https://github.com/AstroNvim/AstroNvim/blob/0079d7bcce221bbed3ecd32833f4e79c0a1979fe/lua/astronvim/plugins/snacks.lua#L186
+          find_words_in_dir = function(state)
+            local node = state.tree:get_node()
+            local path = node.type == "file" and node:get_parent_id() or node:get_id()
+            require("snacks").picker.grep { cwd = path }
+          end,
+          -- https://github.com/AstroNvim/AstroNvim/blob/0079d7bcce221bbed3ecd32833f4e79c0a1979fe/lua/astronvim/plugins/snacks.lua#L187-L190
+          find_all_words_in_dir = function(state)
+            local node = state.tree:get_node()
+            local path = node.type == "file" and node:get_parent_id() or node:get_id()
+            require("snacks").picker.grep { cwd = path, hidden = true, ignored = true }
+          end,
+        },
+        window = {
+          mappings = {
+            ff = "find_files_in_dir",
+            fF = "find_all_files_in_dir",
+            fw = "find_words_in_dir",
+            fW = "find_all_words_in_dir",
+          },
+        },
+      },
+    },
+  },
 }
