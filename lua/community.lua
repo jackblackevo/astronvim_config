@@ -22,6 +22,7 @@ return {
   { import = "astrocommunity.editing-support.vim-visual-multi" },
   { import = "astrocommunity.diagnostics.trouble-nvim" },
   { import = "astrocommunity.lsp.actions-preview-nvim" },
+  { import = "astrocommunity.lsp.lsp-signature-nvim" },
   { import = "astrocommunity.completion.tabnine-nvim" },
   { import = "astrocommunity.completion.avante-nvim" },
 }
