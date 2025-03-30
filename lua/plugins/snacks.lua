@@ -10,7 +10,6 @@ return {
     -- https://github.com/folke/snacks.nvim/blob/main/docs/indent.md#%EF%B8%8F-config
     indent = {
       scope = {
-        underline = true,
         -- https://github.com/lukas-reineke/indent-blankline.nvim#rainbow-delimitersnvim-integration
         -- https://github.com/AstroNvim/astrocommunity/blob/64331a3294aef0993d5bac69e28cc851b7a916e9/lua/astrocommunity/pack/rainbow-delimiter-indent-blankline/init.lua#L11-L20
         hl = vim.tbl_get(vim.g, "rainbow_delimiters", "highlight") or {
