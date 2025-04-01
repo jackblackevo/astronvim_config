@@ -61,8 +61,8 @@ return {
           mappings = {
             ff = "find_files_in_dir",
             fF = "find_all_files_in_dir",
-            fw = "find_words_in_dir",
-            fW = "find_all_words_in_dir",
+            fw = vim.fn.executable "rg" == 1 and "find_words_in_dir" or nil,
+            fW = vim.fn.executable "rg" == 1 and "find_all_words_in_dir" or nil,
           },
         },
       },
