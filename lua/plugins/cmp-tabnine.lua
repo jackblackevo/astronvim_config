@@ -52,7 +52,9 @@ return {
 
           local a_priority = source_priority[a.source_id]
           local b_priority = source_priority[b.source_id]
-          if a_priority ~= b_priority then return a_priority > b_priority end
+          if a_priority ~= nil and b_priority ~= nil and a_priority ~= b_priority then
+            return a_priority > b_priority
+          end
         end,
         -- default sorts
         "score",
