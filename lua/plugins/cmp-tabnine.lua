@@ -13,6 +13,8 @@ return {
     -- install the blink, nvim-cmp compatibility layer
     { "Saghen/blink.compat", version = "*", lazy = true, opts = {} },
   },
+  ---@module 'blink.cmp'
+  ---@type blink.cmp.Config
   opts = {
     sources = {
       -- enable the provider by default
