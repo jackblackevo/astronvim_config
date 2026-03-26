@@ -25,5 +25,5 @@ return {
   { import = "astrocommunity.lsp.actions-preview-nvim" },
   { import = "astrocommunity.lsp.lsp-signature-nvim" },
   { import = "astrocommunity.completion.tabnine-nvim" },
-  { import = "astrocommunity.completion.avante-nvim" },
+  { import = "astrocommunity.ai.avante-nvim" },
 }
