@@ -1,9 +1,9 @@
 -- https://docs.astronvim.com/recipes/cmp/#add-nvim-cmp-sources
--- https://github.com/Saghen/blink.compat
+-- https://github.com/saghen/blink.compat
 
 ---@type LazySpec
 return {
-  "Saghen/blink.cmp",
+  "saghen/blink.cmp",
   optional = true,
   dependencies = {
     -- add the legacy cmp source as a dependency for `blink.cmp`
@@ -11,7 +11,7 @@ return {
   },
   specs = {
     -- install the blink, nvim-cmp compatibility layer
-    { "Saghen/blink.compat", version = "*", lazy = true, opts = {} },
+    { "saghen/blink.compat", version = "*", lazy = true, opts = {} },
   },
   ---@module 'blink.cmp'
   ---@type blink.cmp.Config
@@ -42,7 +42,7 @@ return {
     -- https://cmp.saghen.dev/recipes.html#fuzzy-sorting-filtering
     fuzzy = {
       sorts = {
-        -- https://github.com/Saghen/blink.cmp/issues/1098#issuecomment-2679295335
+        -- https://github.com/saghen/blink.cmp/issues/1098#issuecomment-2679295335
         function(a, b)
           local source_priority = {
             tabnine = 5,

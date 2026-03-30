@@ -3,7 +3,7 @@
 
 ---@type LazySpec
 return {
-  "Saghen/blink.cmp",
+  "saghen/blink.cmp",
   ---@module 'blink.cmp'
   ---@type blink.cmp.Config
   opts = {
